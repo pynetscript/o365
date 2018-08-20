@@ -4,7 +4,7 @@
 # o365
 
 ### Script use
-- Get updated when Office 365 IPs and/or URLs change (via Slack private channel).
+- Get updated with Office 365 IPs and/or URLs changed by Microsoft (via Slack private channel).
 - "Almost" completely based on script provided by Microsoft - [Managing Office 365 endpoints](https://support.office.com/en-us/article/managing-office-365-endpoints-99cab9d4-ef59-4207-9f2b-3728eb46bf9a?redirectSourcePath=%252fen-us%252farticle%252fnetwork-connectivity-to-office-365-64b420ef-0218-48f6-8a34-74bb27633b10&ui=en-US&rs=en-US&ad=US)
 
 

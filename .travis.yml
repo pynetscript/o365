@@ -6,6 +6,7 @@ before_install:
   - sudo python3 -m pip install -U pip
   - touch clientrequestid_latestversion.txt
   - ls -l
+  - pwd
 python:
   - "3.4"
   - "3.5"

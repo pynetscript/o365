@@ -58,4 +58,4 @@ sudo python3 -m pip install -r requirements.txt
 
 # cron job
 
-- I have added a cron job to run the script every 10 minutes.
+- Microsoft suggests that we run this check every hour so I have created a cron job to run the script every 10 minutes.

@@ -48,8 +48,8 @@ sudo python3 -m pip install -r requirements.txt
     - Icon_url: "icon_url" variable
     - Text: "text" variable
 - Else (Online version equal to or lower than version in "clientrequestid_latestversion.txt":
-- Print: `Office 365 worldwide commercial service instance endpoints are up-to-date.`
-- Send a notification via Slack message:
+  - Print: `Office 365 worldwide commercial service instance endpoints are up-to-date.`
+  - Send a notification via Slack message:
     - Channel: #o365
     - User: mr-robot
     - Icon_url: "icon_url" variable

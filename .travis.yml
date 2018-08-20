@@ -4,7 +4,6 @@ before_install:
   - sudo apt-get install -y git
   - sudo apt-get install -y python3-pip
   - sudo python3 -m pip install -U pip
-  - touch /home/travis/build/pynetscript/o365/clientrequestid_latestversion.txt
   - chmod 774 /home/travis/build/pynetscript/o365/runner.py
   - ls -l
   - pwd

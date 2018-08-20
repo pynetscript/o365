@@ -6,7 +6,6 @@ before_install:
   - sudo python3 -m pip install -U pip
   - chmod 774 /home/travis/build/pynetscript/o365/runner.py
   - ls -l
-  - pwd
 python:
   - "3.4"
   - "3.5"

@@ -54,8 +54,12 @@ icon_url = "https://avatars.slack-edge.com/2018-08-14/416017134033_c12382bddd39e
 
 
 # path where client ID and latest version number will be stored
-home = expanduser("~")
-datapath = (home + '/o365/clientrequestid_latestversion.txt')
+#home = expanduser("~")
+
+home = os.path.dirname(os.path.abspath(__file__))
+
+#datapath = (home + '/o365/clientrequestid_latestversion.txt')
+datapath = (home + '/clientrequestid_latestversion.txt')
 
 
 # fetch clientrequestid and worldwide latest version from "datapath" file if data exists, else

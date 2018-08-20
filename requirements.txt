@@ -1,2 +1,8 @@
 urllib3==1.23
+websocket-client==0.49.0
+chardet==3.0.4
+idna==2.6certifi==2018.8.13
+certifi==2018.8.13
+requests==2.19.1
 slackclient==1.2.1
+six==1.11.0

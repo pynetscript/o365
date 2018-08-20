@@ -5,6 +5,7 @@ before_install:
   - sudo apt-get install -y python3-pip
   - sudo python3 -m pip install -U pip
   - touch /home/travis/build/pynetscript/o365/clientrequestid_latestversion.txt
+  - chmod 774 /home/travis/build/pynetscript/o365/runner.py
   - ls -l
   - pwd
 python:
@@ -13,6 +14,6 @@ python:
   - "3.6"
 install:
   - sudo python3 -m pip install -r requirements.txt --ignore-installed 
-script: sudo python3 runner.py
+script: python3 runner.py
 notifications:
    slack: pynetscript:3GF5L6jlBvYl9TA5mrcJ87rq

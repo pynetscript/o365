@@ -5,6 +5,7 @@ before_install:
   - sudo apt-get install -y python3-pip
   - sudo python3 -m pip install -U pip
   - touch clientrequestid_latestversion.txt
+  - ls -l
 python:
   - "3.4"
   - "3.5"

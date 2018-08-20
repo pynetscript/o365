@@ -12,7 +12,8 @@ import uuid
 import time
 import datetime
 import signal
-from slackclient import SlackClient
+#from slackclient import SlackClient
+import slackclient
 from os.path import expanduser
 
 

@@ -18,3 +18,48 @@ sudo python3 -m pip install -U pip
 cd ~ && git clone https://github.com/pynetscript/o365.git && cd o365
 sudo python3 -m pip install -r requirements.txt
 ```
+
+# Prerequisites
+
+- Add Slack application named "Bots"
+  - Need to add API token at `/etc/environment`
+- Create a Private channel
+
+
+# runner.py
+
+- If "clientrequestid_latestversion.txt" file exists in the same directory as "runner.py":
+  - Fetch clientRequestId and Worldwide latest version.
+- Else:
+  - Generate clientRequestId with `uuid` module.
+  - Set Worldwide latest version to "0000000000".
+  - Open/Create "clientrequestid_latestversion.txt" and write the data - [eg](https://pastebin.com/dA1wr5pH).
+- Check the Worldwide latest version - [eg](https://endpoints.office.com/version/Worldwide?clientrequestid=39943d70-aa59-40c9-bdcf-69998b415368).
+
+- If Online version is higher than version in "clientrequestid_latestversion.txt":
+  - Print: `New version of Office 365 worldwide commercial service instance endpoints detected`
+  - Write the new version number to "clientrequestid_latestversion.txt" - [eg](https://pastebin.com/fiqYZgaq).
+  - Download URLs and IPv4 prefixes that their category is either "Allow" or "Optimize" - [eg](https://endpoints.office.com/endpoints/Worldwide?clientrequestid=39943d70-aa59-40c9-bdcf-69998b415368)
+  - Store all URLs  as a string (each URL separated via comma).
+  - Store all IPv4 prefixes in a string (each prefix separated via comma).
+  - Send the data via Slack message:
+    - Channel: #o365
+    - User: mr-robot
+    - Icon_url: "icon_url" variable
+    - Text: "text" variable
+- Else (Online version equal to or lower than version in "clientrequestid_latestversion.txt":
+- Print: `Office 365 worldwide commercial service instance endpoints are up-to-date.`
+- Send a notification via Slack message:
+    - Channel: #o365
+    - User: mr-robot
+    - Icon_url: "icon_url" variable
+    - Text: "text" variable
+
+
+
+When there is a change, it downloads the endpoints and filters for the “Allow” and “Optimize” category endpoints. 
+It also uses a unique ClientRequestId across multiple calls and saves the latest version found in a temporary file. 
+
+# cron job
+
+- I have added a cron job to run the script every 10 minutes.

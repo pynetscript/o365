@@ -9,7 +9,6 @@ import time
 import datetime
 import signal
 from slackclient import SlackClient
-from os.path import expanduser
 
 
 signal.signal(signal.SIGPIPE, signal.SIG_DFL)   # IOERror: Broken pipe
@@ -54,12 +53,9 @@ icon_url = "https://avatars.slack-edge.com/2018-08-14/416017134033_c12382bddd39e
 
 
 # path where client ID and latest version number will be stored
-#home = expanduser("~")
+path = os.path.dirname(os.path.abspath(__file__))
 
-home = os.path.dirname(os.path.abspath(__file__))
-
-#datapath = (home + '/o365/clientrequestid_latestversion.txt')
-datapath = (home + '/clientrequestid_latestversion.txt')
+datapath = (path + '/clientrequestid_latestversion.txt')
 
 
 # fetch clientrequestid and worldwide latest version from "datapath" file if data exists, else

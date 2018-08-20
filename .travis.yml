@@ -4,7 +4,7 @@ python:
   - "3.5"
   - "3.6"
 install:
-  - sudo pip3 install -r requirements.txt
+  - sudo pip install -r requirements.txt
 script: sudo python3 runner.py
 notifications:
    slack: pynetscript:3GF5L6jlBvYl9TA5mrcJ87rq

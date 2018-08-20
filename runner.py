@@ -32,7 +32,7 @@ def webApiGet(methodName, instanceName, clientRequestId):
 
 def slack_message(channel, username, icon_url, text):
     """
-    Channel:        #channel'   (private/public)
+    Channel:        #channel    (private/public)
     App joined:     Bots        'https://pynetscript.slack.com/apps/A0F7YS25R-bots?next_id=0'
                     Username:   'mr-robot'
                     Image:      'https://avatars.slack-edge.com/2018-08-14/416017134033_c12382bddd39e3823d99_48.jpg'

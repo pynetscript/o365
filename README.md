@@ -40,8 +40,8 @@ sudo python3 -m pip install -r requirements.txt
   - Print: `New version of Office 365 worldwide commercial service instance endpoints detected`
   - Write the new version number to "clientrequestid_latestversion.txt" - [eg](https://pastebin.com/fiqYZgaq).
   - Download URLs and IPv4 prefixes that their category is either "Allow" or "Optimize" - [eg](https://endpoints.office.com/endpoints/Worldwide?clientrequestid=39943d70-aa59-40c9-bdcf-69998b415368)
-  - Store all URLs  as a string (each URL separated via comma).
-  - Store all IPv4 prefixes in a string (each prefix separated via comma).
+  - Store all URLs  as a string (each URL separated by comma).
+  - Store all IPv4 prefixes in a string (each prefix separated by comma).
   - Send the data via Slack message:
     - Channel: #o365
     - User: mr-robot

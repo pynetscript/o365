@@ -62,3 +62,6 @@ sudo python3 -m pip install -r requirements.txt
 
 
 ## Demo
+```
+aleks@acorp:~/o365$ python3 runner.py
+```

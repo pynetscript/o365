@@ -15,8 +15,8 @@ import signal
 from slackclient import SlackClient
 
 
-signal.signal(signal.SIGPIPE, signal.SIG_DFL)  	# IOERror: Broken pipe
-signal.signal(signal.SIGINT, signal.SIG_DFL) 	# KeyboardInterrupt: Ctrl-C
+signal.signal(signal.SIGPIPE, signal.SIG_DFL)   # IOERror: Broken pipe
+signal.signal(signal.SIGINT, signal.SIG_DFL)    # KeyboardInterrupt: Ctrl-C
 
 
 def webApiGet(methodName, instanceName, clientRequestId):

@@ -38,8 +38,8 @@ def slack_message(channel, username, icon_url, text):
     
     BOTS_TOKEN = os.environ.get('BOTS_TOKEN')
     if BOTS_TOKEN is None:
-        NOT_FOUND = 'BOTS_TOKEN was not found in environment variable.'
-        COMMAND = 'Add a token with the "export BOTS_TOKEN=xoxb-0123456789a0-123456789b01-23456789c0123456789d0123" command.'
+        NOT_FOUND = 'BOTS_TOKEN was not found in environment variable "/etc/environment".'
+        COMMAND = 'Add token with BOTS_TOKEN="xoxb-0123456789a0-123456789b01-23456789c0123456789d0123" format.'
         print('\n'
               '{E1} {E2} \n'.format(E1=NOT_FOUND, E2=COMMAND))
         raise SlackBotsAPITokenNotFound()

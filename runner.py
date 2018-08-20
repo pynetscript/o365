@@ -34,6 +34,9 @@ def slack_message(channel, username, icon_url, text):
                     Username:   'mr-robot'
                     Image:      'https://avatars.slack-edge.com/2018-08-14/416017134033_c12382bddd39e3823d99_48.jpg'
     """
+    class SlackBotsAPITokenNotFound(Exception):
+        pass
+    
     BOTS_TOKEN = os.environ.get('BOTS_TOKEN')
     if BOTS_TOKEN is None:
         NOT_FOUND = 'BOTS_TOKEN was not found in environment variable.'

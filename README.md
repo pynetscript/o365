@@ -56,10 +56,6 @@ sudo python3 -m pip install -r requirements.txt
     - Text: "text" variable
 
 
-
-When there is a change, it downloads the endpoints and filters for the “Allow” and “Optimize” category endpoints. 
-It also uses a unique ClientRequestId across multiple calls and saves the latest version found in a temporary file. 
-
 # cron job
 
 - I have added a cron job to run the script every 10 minutes.

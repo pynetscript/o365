@@ -87,18 +87,18 @@ sudo python3 -m pip install -r requirements.txt
 ## Demo (online version > version in "clientrequestid_latestversion.txt")
 ```
 aleks@acorp:~/o365$ ./runner.py
-21/08/2018 15:19:28 - New version of Office 365 worldwide commercial service instance endpoints detected.
+21/08/2018 23:50:28 - New version of Office 365 worldwide commercial service instance endpoints detected.
 ```
 
-![Imgur](https://i.imgur.com/8lHat61.png)
+![Imgur](https://i.imgur.com/RiAq6tj.png)
 
-![Imgur](https://i.imgur.com/3rcwQv2.png)
+![Imgur](https://i.imgur.com/YTVB4F4.png)
 
 
 ## Demo (online version <= version in "clientrequestid_latestversion.txt")
 ```
 aleks@acorp:~/o365$ ./runner.py 
-21/08/2018 15:40:05 - Office 365 worldwide commercial service instance endpoints are up-to-date.
+22/08/2018 00:00:05 - Office 365 worldwide commercial service instance endpoints are up-to-date.
 ```
 
-![Imgur](https://i.imgur.com/IOcoHdj.png)
+![Imgur](https://i.imgur.com/ix1rvUH.png)

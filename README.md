@@ -22,8 +22,25 @@ sudo python3 -m pip install -r requirements.txt
 # Prerequisites
 
 - Add Slack application named "Bots"
-  - Need to add API token at `/etc/environment`
+  - Need to add API token provided by "Bots" at `/etc/environment`
 - Create a Private channel
+  - My channel is named #o365 and in the script that name is used.
+- Specify in the script values from your environment:
+  - (runner.py line 133)[https://github.com/pynetscript/o365/blob/master/runner.py#L133]
+  - (runner.py line 147)[https://github.com/pynetscript/o365/blob/master/runner.py#L147]
+  - channel: #o365
+  - username: mr-robot
+  - icon_url: [icon_url][https://avatars.slack-edge.com/2018-08-14/416017134033_c12382bddd39e3823d99_48.jpg]
+
+![Imgur](https://i.imgur.com/JZnOz6S.png)
+
+![Imgur](https://i.imgur.com/WicDA0x.png)
+
+![Imgur](https://i.imgur.com/VIAVz6e.png)
+
+![Imgur](https://i.imgur.com/UU31Joh.png)
+
+![Imgur](https://i.imgur.com/8XNWtc5.png)
 
 
 # runner.py
@@ -74,3 +91,9 @@ aleks@acorp:~/o365$ ./runner.py
 
 
 ## Demo (online version <= version in "clientrequestid_latestversion.txt")
+```
+aleks@acorp:~/o365$ ./runner.py 
+21/08/2018 15:32:47 - Office 365 worldwide commercial service instance endpoints are up-to-date.
+```
+
+![Imgur](https://i.imgur.com/IOcoHdj.png)

@@ -28,8 +28,8 @@ sudo python3 -m pip install -r requirements.txt
 - Create a Private channel
   - My private channel is named #o365
 - Specify in the script values from your environment:
-  - [runner.py line 148](https://github.com/pynetscript/o365/blob/master/runner.py#L148)
-  - [runner.py line 164](https://github.com/pynetscript/o365/blob/master/runner.py#L164)
+  - [runner.py line 146](https://github.com/pynetscript/o365/blob/master/runner.py#L146)
+  - [runner.py line 158](https://github.com/pynetscript/o365/blob/master/runner.py#L158)
   - channel: #o365
   - username: mr-robot
   - icon_url: [icon_url](https://avatars.slack-edge.com/2018-08-14/416017134033_c12382bddd39e3823d99_48.jpg)

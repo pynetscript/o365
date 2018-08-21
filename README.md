@@ -43,7 +43,7 @@ sudo python3 -m pip install -r requirements.txt
 
 ![Imgur](https://i.imgur.com/UU31Joh.png)
 
-![Imgur](https://i.imgur.com/8XNWtc5.png)
+![Imgur](https://i.imgur.com/GSesuVm.png)
 
 
 # runner.py

@@ -24,7 +24,7 @@ sudo python3 -m pip install -r requirements.txt
 - Add Slack application named "Bots"
   - Need to add API token provided by "Bots" at `/etc/environment`
   - username: mr-robot
-  - icon_url: [icon_url][https://avatars.slack-edge.com/2018-08-14/416017134033_c12382bddd39e3823d99_48.jpg]
+  - icon_url: [icon_url](https://avatars.slack-edge.com/2018-08-14/416017134033_c12382bddd39e3823d99_48.jpg)
 - Create a Private channel
   - My private channel is named #o365
 - Specify in the script values from your environment:
@@ -32,7 +32,7 @@ sudo python3 -m pip install -r requirements.txt
   - (runner.py line 147)[https://github.com/pynetscript/o365/blob/master/runner.py#L147]
   - channel: #o365
   - username: mr-robot
-  - icon_url: [icon_url][https://avatars.slack-edge.com/2018-08-14/416017134033_c12382bddd39e3823d99_48.jpg]
+  - icon_url: [icon_url](https://avatars.slack-edge.com/2018-08-14/416017134033_c12382bddd39e3823d99_48.jpg)
 
 ![Imgur](https://i.imgur.com/JZnOz6S.png)
 

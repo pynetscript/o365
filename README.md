@@ -57,7 +57,7 @@ sudo python3 -m pip install -r requirements.txt
 - If Online version is higher than version in "clientrequestid_latestversion.txt":
   - Print: `New version of Office 365 worldwide commercial service instance endpoints detected`
   - Write the new version number to "clientrequestid_latestversion.txt" - [eg](https://pastebin.com/fiqYZgaq).
-  - Download URLs, IPv4 prefixes and TCP/UDP ports that their category is either "Allow" or "Optimize" - [eg](https://endpoints.office.com/endpoints/Worldwide?clientrequestid=fca86b7c-0b6f-4b68-8e82-afa45b65e631)
+  - Download URLs, IPv4 prefixes and TCP/UDP ports that their category is either "Allow" or "Optimize" - [eg](https://endpoints.office.com/endpoints/Worldwide?clientrequestid=fca86b7c-0b6f-4b68-8e82-afa45b65e631).
   - Store all URLs, IPv4 prefixes, TCP/UDP ports as a different strings (separated by comma).
   - Send the data via Slack message:
     - Channel: **#o365**

@@ -72,4 +72,4 @@ aleks@acorp:~/o365$ ./runner.py
 
 ![stack Overflow](http://lmsotfy.com/so.png)
 
-[Imgur](https://i.imgur.com/3rcwQv2.png)
+![Imgur](https://i.imgur.com/3rcwQv2.png)

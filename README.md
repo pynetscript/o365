@@ -28,8 +28,8 @@ sudo python3 -m pip install -r requirements.txt
 - Create a Private channel
   - My private channel is named #o365
 - Specify in the script values from your environment:
-  - [runner.py line 141](https://github.com/pynetscript/o365/blob/master/runner.py#L141)
-  - [runner.py line 155](https://github.com/pynetscript/o365/blob/master/runner.py#L155)
+  - [runner.py line 148](https://github.com/pynetscript/o365/blob/master/runner.py#L148)
+  - [runner.py line 164](https://github.com/pynetscript/o365/blob/master/runner.py#L164)
   - channel: #o365
   - username: mr-robot
   - icon_url: [icon_url](https://avatars.slack-edge.com/2018-08-14/416017134033_c12382bddd39e3823d99_48.jpg)
@@ -61,6 +61,8 @@ sudo python3 -m pip install -r requirements.txt
   - Download URLs and IPv4 prefixes that their category is either "Allow" or "Optimize" - [eg](https://endpoints.office.com/endpoints/Worldwide?clientrequestid=fca86b7c-0b6f-4b68-8e82-afa45b65e631)
   - Store all URLs  as a string (each URL separated by comma).
   - Store all IPv4 prefixes in a string (each prefix separated by comma).
+  - Store all TCP ports in a string (each port separated by comma).
+  - Store all UDP ports in a string (each port separated by comma).
   - Send the data via Slack message:
     - Channel: #o365
     - User: mr-robot

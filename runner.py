@@ -1,5 +1,13 @@
 #!/usr/bin/python3
 
+###############################################################################
+# Written by:           Aleks Lambreca
+# Creation date:        19/08/2018
+# Last modified date:   21/08/2018
+# Version:              v1.0
+###############################################################################
+
+
 # Standard library modules
 import json
 import os

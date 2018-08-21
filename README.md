@@ -57,23 +57,20 @@ sudo python3 -m pip install -r requirements.txt
 - If Online version is higher than version in "clientrequestid_latestversion.txt":
   - Print: `New version of Office 365 worldwide commercial service instance endpoints detected`
   - Write the new version number to "clientrequestid_latestversion.txt" - [eg](https://pastebin.com/fiqYZgaq).
-  - Download URLs and IPv4 prefixes that their category is either "Allow" or "Optimize" - [eg](https://endpoints.office.com/endpoints/Worldwide?clientrequestid=fca86b7c-0b6f-4b68-8e82-afa45b65e631)
-  - Store all URLs  as a string (each URL separated by comma).
-  - Store all IPv4 prefixes in a string (each prefix separated by comma).
-  - Store all TCP ports in a string (each port separated by comma).
-  - Store all UDP ports in a string (each port separated by comma).
+  - Download URLs, IPv4 prefixes and TCP/UDP ports that their category is either "Allow" or "Optimize" - [eg](https://endpoints.office.com/endpoints/Worldwide?clientrequestid=fca86b7c-0b6f-4b68-8e82-afa45b65e631)
+  - Store all URLs, IPv4 prefixes, TCP/UDP ports as a different strings (separated by comma).
   - Send the data via Slack message:
-    - Channel: #o365
-    - User: mr-robot
-    - Icon_url: "icon_url" variable
-    - Text: "text" variable
+    - Channel: **#o365**
+    - User: **mr-robot**
+    - Icon_url: **"icon_url" variable**
+    - Text: **"text" variable**
 - Else (Online version equal to or lower than version in "clientrequestid_latestversion.txt":
   - Print: `Office 365 worldwide commercial service instance endpoints are up-to-date.`
   - Send a notification via Slack message:
-    - Channel: #o365
-    - User: mr-robot
-    - Icon_url: "icon_url" variable
-    - Text: "text" variable
+    - Channel: **#o365**
+    - User: **mr-robot**
+    - Icon_url: **"icon_url" variable**
+    - Text: **"text" variable**
 
 
 # cron job

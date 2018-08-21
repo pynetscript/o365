@@ -58,10 +58,14 @@ sudo python3 -m pip install -r requirements.txt
 
 # cron job
 
-- Microsoft suggests that we run this check every hour so I have created a cron job to run the script every 10 minutes.
+- Microsoft suggests that we run the script every hour so we can create a cron job to run the script at fixed times, dates, or intervals.
+- Need to give "execute" permission to "runner.py" for cron job to work (`chmod 774 runner.py`).
 
 
-## Demo
+## Demo (online version > version in "clientrequestid_latestversion.txt")
 ```
-aleks@acorp:~/o365$ python3 runner.py
+aleks@acorp:~/o365$ ./runner.py
+21/08/2018 15:19:28 - New version of Office 365 worldwide commercial service instance endpoints detected.
 ```
+
+![alt text](https://imgur.com/8lHat61)

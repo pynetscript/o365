@@ -53,12 +53,12 @@ sudo python3 -m pip install -r requirements.txt
   - Generate clientRequestId with `uuid` module.
   - Set Worldwide latest version to "0000000000".
   - Open/Create "clientrequestid_latestversion.txt" and write the data - [eg](https://pastebin.com/dA1wr5pH).
-- Check the Worldwide latest version - [eg](https://endpoints.office.com/version/Worldwide?clientrequestid=39943d70-aa59-40c9-bdcf-69998b415368).
+- Check the Worldwide latest version - [eg](https://endpoints.office.com/version/Worldwide?clientrequestid=fca86b7c-0b6f-4b68-8e82-afa45b65e631).
 
 - If Online version is higher than version in "clientrequestid_latestversion.txt":
   - Print: `New version of Office 365 worldwide commercial service instance endpoints detected`
   - Write the new version number to "clientrequestid_latestversion.txt" - [eg](https://pastebin.com/fiqYZgaq).
-  - Download URLs and IPv4 prefixes that their category is either "Allow" or "Optimize" - [eg](https://endpoints.office.com/endpoints/Worldwide?clientrequestid=39943d70-aa59-40c9-bdcf-69998b415368)
+  - Download URLs and IPv4 prefixes that their category is either "Allow" or "Optimize" - [eg](https://endpoints.office.com/endpoints/Worldwide?clientrequestid=fca86b7c-0b6f-4b68-8e82-afa45b65e631)
   - Store all URLs  as a string (each URL separated by comma).
   - Store all IPv4 prefixes in a string (each prefix separated by comma).
   - Send the data via Slack message:

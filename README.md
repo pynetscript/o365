@@ -28,7 +28,7 @@ sudo python3 -m pip install -r requirements.txt
 - Create a Private channel
   - My private channel is named #o365
   - Add "Bots" app to channel
-- Specify in the script values from your environment in line [146](https://github.com/pynetscript/o365/blob/master/runner.py#L146) and [158](https://github.com/pynetscript/o365/blob/master/runner.py#L158):
+- Specify in the script values from your environment in lines [146](https://github.com/pynetscript/o365/blob/master/runner.py#L146) and [158](https://github.com/pynetscript/o365/blob/master/runner.py#L158):
   - channel: **#o365**
   - username: **mr-robot**
   - icon_url: **[icon_url](https://avatars.slack-edge.com/2018-08-14/416017134033_c12382bddd39e3823d99_48.jpg)**

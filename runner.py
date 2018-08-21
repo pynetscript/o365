@@ -120,8 +120,12 @@ if version['latest'] > latestVersion:
             flatIps.extend([(category, ip, tcpPorts, udpPorts) for ip in ip4s])
 
 
-    o365_ipv4_ips = (','.join(sorted(set([ip for (category, ip, tcpPorts, udpPorts) in flatIps]))))
+    o365_ipv4 = (','.join(sorted(set([ip for (category, ip, tcpPorts, udpPorts) in flatIps]))))
     o365_urls = (','.join(sorted(set([url for (category, url, tcpPorts, udpPorts) in flatUrls]))))
+
+    o365_tcp = (','.join(sorted(set([tcpPorts for (category, ip, tcpPorts, udpPorts) in flatIps]))))
+    o365_udp = (','.join(sorted(set([udpPorts for (category, ip, tcpPorts, udpPorts) in flatIps]))))
+    o365_udp_fix = o365_udp.lstrip(',')
 
     latest_version = (version['latest'])
 
@@ -134,9 +138,12 @@ if version['latest'] > latestVersion:
             'Current version: ' + latestVersion + ' (' + datapath + ')' + '\n'
             'Latest version: ' + latest_version + '\n\n\n'
             'IPv4 Address Ranges for Firewall \n\n' +
-            o365_ipv4_ips + '\n\n\n'
+            o365_ipv4 + '\n\n\n'
             'URLs for Firewall \n\n' +
-            o365_urls)
+            o365_urls + '\n\n\n'
+            'IPv4 Address Ranges & URLs TCP/UDP ports \n\n' +
+            'TCP: ' + o365_tcp + '\n' +
+            'UDP: ' + o365_udp_fix)
 
     slack_message('#o365', 'mr-robot', icon_url, text)
 
@@ -144,9 +151,11 @@ if version['latest'] > latestVersion:
 else:
     current_timestamp = datetime.datetime.now()
     current_time = current_timestamp.strftime('%d/%m/%Y %H:%M:%S')
-    print(current_time, '- Office 365 worldwide commercial service instance endpoints are up-to-date.')
 
     latest_version = (version['latest'])
+    print(current_time, '- Office 365 worldwide commercial service instance endpoints are up-to-date.'
+          '\nCurrent version: ' + latestVersion +
+          '\nLatest version: ' + latest_version)
 
     text = ('Office 365 worldwide commercial service instance endpoints are up-to-date.'
             '\nCurrent version: ' + latestVersion +

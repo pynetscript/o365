@@ -82,7 +82,7 @@ else:
 # call version method to check the latest version, and pull new data if version number is different
 # https://endpoints.office.com/version/Worldwide?clientrequestid=39943d70-aa59-40c9-bdcf-69998b415368
 version = webApiGet('version', 'Worldwide', clientRequestId)
-
+latest_version = (version['latest'])
 
 # If Online version > version in "clientrequestid_latestversion.txt"
 if version['latest'] > latestVersion:
@@ -127,8 +127,6 @@ if version['latest'] > latestVersion:
     o365_udp = (','.join(sorted(set([udpPorts for (category, ip, tcpPorts, udpPorts) in flatIps]))))
     o365_udp_fix = o365_udp.lstrip(',')
 
-    latest_version = (version['latest'])
-
     with open(datapath, 'r') as fin:
         clientRequestId = fin.readline().strip()
 
@@ -151,11 +149,7 @@ if version['latest'] > latestVersion:
 else:
     current_timestamp = datetime.datetime.now()
     current_time = current_timestamp.strftime('%d/%m/%Y %H:%M:%S')
-
-    latest_version = (version['latest'])
-    print(current_time, '- Office 365 worldwide commercial service instance endpoints are up-to-date.'
-          '\nCurrent version: ' + latestVersion +
-          '\nLatest version: ' + latest_version)
+    print(current_time, '- Office 365 worldwide commercial service instance endpoints are up-to-date.')
 
     text = ('Office 365 worldwide commercial service instance endpoints are up-to-date.'
             '\nCurrent version: ' + latestVersion +

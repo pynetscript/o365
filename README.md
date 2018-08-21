@@ -95,7 +95,7 @@ aleks@acorp:~/o365$ ./runner.py
 ## Demo (online version <= version in "clientrequestid_latestversion.txt")
 ```
 aleks@acorp:~/o365$ ./runner.py 
-21/08/2018 15:32:47 - Office 365 worldwide commercial service instance endpoints are up-to-date.
+21/08/2018 15:40:05 - Office 365 worldwide commercial service instance endpoints are up-to-date.
 ```
 
 ![Imgur](https://i.imgur.com/IOcoHdj.png)

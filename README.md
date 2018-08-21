@@ -68,8 +68,9 @@ aleks@acorp:~/o365$ ./runner.py
 21/08/2018 15:19:28 - New version of Office 365 worldwide commercial service instance endpoints detected.
 ```
 
-![alt text](https://imgur.com/8lHat61)
-
-![stack Overflow](http://lmsotfy.com/so.png)
+![Imgur](https://i.imgur.com/8lHat61.png)
 
 ![Imgur](https://i.imgur.com/3rcwQv2.png)
+
+
+## Demo (online version <= version in "clientrequestid_latestversion.txt")

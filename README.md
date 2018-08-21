@@ -69,3 +69,7 @@ aleks@acorp:~/o365$ ./runner.py
 ```
 
 ![alt text](https://imgur.com/8lHat61)
+
+![stack Overflow](http://lmsotfy.com/so.png)
+
+[Imgur](https://i.imgur.com/3rcwQv2.png)

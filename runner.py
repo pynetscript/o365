@@ -13,7 +13,6 @@ import json
 import os
 import urllib.request
 import uuid
-import requests
 import time
 import datetime
 import signal

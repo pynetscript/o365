@@ -41,7 +41,7 @@ sudo python3 -m pip install -r requirements.txt
 
 ![Imgur](https://i.imgur.com/UU31Joh.png)
 
-![Imgur](https://i.imgur.com/GSesuVm.png)
+![Imgur](https://i.imgur.com/lHjWPeV.png)
 
 
 # runner.py
@@ -58,12 +58,29 @@ sudo python3 -m pip install -r requirements.txt
   - Print: `New version of Office 365 worldwide commercial service instance endpoints detected`
   - Write the new version number to "clientrequestid_latestversion.txt" - [eg](https://pastebin.com/fiqYZgaq).
   - Download URLs, IPv4 prefixes and TCP/UDP ports that their category is either "Allow" or "Optimize" - [eg](https://endpoints.office.com/endpoints/Worldwide?clientrequestid=fca86b7c-0b6f-4b68-8e82-afa45b65e631).
-  - Store all URLs, IPv4 prefixes, TCP/UDP ports as a different strings (separated by comma).
-  - Send the data via Slack message:
+  - Create and write all IPv4 prefixes in "o365_ipv4.csv" file
+  - Create and write all URLs in "o365_url.csv" file
+  - Store all TCP/UDP ports as a strings (separated by comma).
+  - Send the data to Slack:
     - Channel: **#o365**
     - User: **mr-robot**
     - Icon_url: **"icon_url" variable**
-    - Text: **"text" variable**
+    - Text: **"text0" variable**
+  - Upload the data to Slack:
+    - Channel: **#o365**
+    - User: **mr-robot**
+    - Icon_url: **"icon_url" variable**
+    - File: **"o365_ipv4.csv"**
+  - Upload the data to Slack:
+    - Channel: **#o365**
+    - User: **mr-robot**
+    - Icon_url: **"icon_url" variable**
+    - File: **"o365_url.csv"**
+  - Send the data to Slack:
+    - Channel: **#o365**
+    - User: **mr-robot**
+    - Icon_url: **"icon_url" variable**
+    - Text: **"text1" variable**
 - Else (Online version equal to or lower than version in "clientrequestid_latestversion.txt":
   - Print: `Office 365 worldwide commercial service instance endpoints are up-to-date.`
   - Send a notification via Slack message:

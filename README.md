@@ -104,6 +104,8 @@ aleks@acorp:~/o365$ ./runner.py
 
 ![Imgur](https://i.imgur.com/HqZmV9a.png)
 
+- [o365_ipv4.csv](https://pastebin.com/K4abynN6)
+- [o365_url.csv](https://pastebin.com/JPj2sEJk)
 
 ## Demo (online version <= version in "clientrequestid_latestversion.txt")
 ```

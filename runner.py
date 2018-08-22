@@ -73,7 +73,8 @@ def slack_upload(channels, initial_comment, title, filename, filetype, file):
         raise SlackBotsAPITokenNotFound()
 
     sc = SlackClient(BOTS_TOKEN)
-    sc.api_call('files.upload', channels=channels, initial_comment=initial_comment, title=title, filename=filename, filetype=filetype, file=file)
+    sc.api_call('files.upload', channels=channels, initial_comment=initial_comment, title=title, filename=filename, 
+                filetype=filetype, file=file)
 
     
 # slack image

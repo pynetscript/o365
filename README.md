@@ -102,9 +102,7 @@ aleks@acorp:~/o365$ ./runner.py
 21/08/2018 23:50:28 - New version of Office 365 worldwide commercial service instance endpoints detected.
 ```
 
-![Imgur](https://i.imgur.com/RiAq6tj.png)
-
-![Imgur](https://i.imgur.com/YTVB4F4.png)
+![Imgur](https://i.imgur.com/HqZmV9a.png)
 
 
 ## Demo (online version <= version in "clientrequestid_latestversion.txt")
@@ -113,4 +111,4 @@ aleks@acorp:~/o365$ ./runner.py
 22/08/2018 00:00:05 - Office 365 worldwide commercial service instance endpoints are up-to-date.
 ```
 
-![Imgur](https://i.imgur.com/ix1rvUH.png)
+![Imgur](https://i.imgur.com/tJok8Ou.png)
